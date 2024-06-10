@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- GOOGLE FONTS LIBARAY -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- BOOTSTRAP FILE -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- FONT AWESOME FILE -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="py-5">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h1 class="position-relative">Bookmarker</h1>
+            <div class="child-container my-5 py-4 p-3 d-flex flex-column justify-content-center align-items-center gap-4">
+                <h2> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+                <div class="form w-100">
+                    <label class="pb-2 fw-semibold" for="bookmarkName"> <i class="fa-solid fa-book-bookmark me-1"></i> Site Name</label>
+                    <div class="input-group mb-3">
+                        <input id="bookmarkName" type="text" class="form-control d-block" placeholder="Bookmark Name"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <label class="pb-2 fw-semibold" for="bookmarkUrl"> <i class="fa-solid fa-link me-1"></i> Site URL</label>
+                    <div class="input-group mb-3">
+                        <input id="bookmarkUrl" type="url" class="form-control" placeholder="Website URL" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <button onclick="addItem()" class="btn px-5 btn-submit d-block mx-auto">Submit</button>
+                </div>
+            </div>
+            <table class="table bg-light text-center">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbData">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
